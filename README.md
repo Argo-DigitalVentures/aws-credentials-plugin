@@ -2,7 +2,6 @@
 Google Chrome Extension which converts a SAML 2.0 assertion to AWS STS Keys (temporary credentials). Just log in to the AWS Web Management Console using your SAML IDP and the Chrome Extension will fetch the SAML Assertion from the HTTP request. The SAML Assertion is then used to call the assumeRoleWithSAML API to create the temporary credentials. (AccessKeyId, SecretAccessKey and SessionToken).
 
 The Chrome Extension can be downloaded here:
-[Google Chrome Web Store](https://chrome.google.com/webstore/detail/ekniobabpcnfjgfbphhcolcinmnbehde/)
 
 # Table of Contents
 * [Why this Chrome Extension?](#why)
@@ -18,9 +17,6 @@ You run into trouble as soon as you would like to execute some fancy scripts fro
 The Security Token Service (STS) from AWS provides an API action assumeRoleWithSAML. Using the SAML Assertion given by your IDP the Chrome Extension will call this API action to fetch temporary credentials. (AccessKeyId, SecretAccessKey and SessionToken). This way there is no need to create some sort of anonymous user in AWS IAM used for executing scripts. This would be a real security nightmare, since it won't be possible to audit who did what. This Chrome Extension however will make it super easy for you to just use your corporate identity for executing scripts calling AWS API's.
 
 ## <a name="gettingstarted"></a>Getting Started
-TODO
-
-## <a name="symlink"></a>Create a symlink to your .aws directory (for Windows users)
 TODO
 
 ## <a name="faq"></a>FAQ: Frequently Asked Question
